@@ -1,0 +1,42 @@
+# Local development state
+.idea/
+.vscode/
+.local/
+.venv/
+**/.gradle/
+**/.kotlin/
+**/.cxx/
+**/build/
+**/__pycache__/
+*.pyc
+android/local.properties
+local.properties
+*.log
+*.out
+*.err
+*.hprof
+
+# Credentials and local datasets
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+*.token
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+
+# Packages are attached to releases separately
+artifacts/
+*.apk
+*.aab
+*.apks
+*.zip
+*.7z
+.DS_Store
+Thumbs.db

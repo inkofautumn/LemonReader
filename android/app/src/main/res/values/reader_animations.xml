@@ -1,0 +1,4 @@
+<resources>
+    <style name="ReaderPanelAnimation"><item name="android:windowEnterAnimation">@anim/reader_panel_in</item><item name="android:windowExitAnimation">@anim/reader_panel_out</item></style>
+    <style name="ReaderDrawerAnimation"><item name="android:windowEnterAnimation">@anim/reader_drawer_in</item><item name="android:windowExitAnimation">@anim/reader_drawer_out</item></style>
+</resources>

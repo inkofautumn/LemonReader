@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <application android:label="灵墨阅读" android:theme="@style/AppTheme" android:allowBackup="false"
+        android:usesCleartextTraffic="false" android:icon="@drawable/ic_lemon"
+        android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true">
+        <provider android:name="com.google.mlkit.common.internal.MlKitInitProvider" android:authorities="${applicationId}.mlkitinitprovider" tools:node="remove" />
+        <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.readerlogs" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/reader_log_paths" />
+        </provider>
+        <service android:name=".reader.ImportService" android:foregroundServiceType="dataSync" android:exported="false" />
+        <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".shimo.ShimoActivity" android:exported="false" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ImportShareActivity" android:exported="false" android:launchMode="singleTop"
+            android:taskAffinity="${applicationId}.import" android:excludeFromRecents="true" android:windowSoftInputMode="adjustResize" />
+        <activity-alias android:name=".ImportNovel" android:targetActivity=".ImportShareActivity" android:exported="true" android:label="导入小说">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="application/epub+zip" />
+                <data android:mimeType="application/epub" />
+                <data android:mimeType="application/x-epub+zip" />
+                <data android:mimeType="application/x-epub" />
+                <!-- Browsers may use a vendor application MIME for an EPUB file. -->
+                <data android:mimeType="application/*" />
+                <data android:mimeType="application/x-mobipocket-ebook" />
+                <data android:mimeType="application/vnd.amazon.ebook" />
+                <data android:mimeType="application/octet-stream" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/x-7z-compressed" />
+                <data android:mimeType="application/x-tar" />
+                <data android:mimeType="application/gzip" />
+                <data android:mimeType="application/x-dzip" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+</manifest>

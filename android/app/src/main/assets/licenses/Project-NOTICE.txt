@@ -1,0 +1,6 @@
+Lemon (灵墨阅读)
+Copyright 2026 Lemon contributors
+
+Original project code is licensed under the Apache License, Version 2.0.
+Third-party components retain their own copyright and license terms.
+See THIRD_PARTY_NOTICES.md and android/app/src/main/assets/licenses/.

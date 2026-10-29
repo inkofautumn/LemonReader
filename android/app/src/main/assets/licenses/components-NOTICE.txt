@@ -1,0 +1,37 @@
+Lemon includes the following third-party components:
+
+libmobi 0.12 -- LGPL-3.0-or-later
+https://github.com/bfabiszewski/libmobi
+Corresponding source: android/app/src/main/cpp/libmobi
+
+Page curl adaptation -- MIT
+Copyright (c) 2025 Peyilo
+https://github.com/Peyilo/libreadview
+See libreadview-LICENSE.txt.
+
+Material Icons -- Apache-2.0
+Copyright Google LLC and contributors.
+https://github.com/google/material-design-icons
+See Material-Icons-LICENSE.txt.
+
+Markwon -- Apache-2.0; CommonMark -- BSD-2-Clause
+https://github.com/noties/Markwon
+https://github.com/commonmark/commonmark-java
+See the component license files in this directory.
+
+Apache Commons Compress, IO, Lang and Codec -- Apache-2.0
+https://commons.apache.org/
+See the component LICENSE and NOTICE files in this directory.
+
+AndroidX Core -- Apache-2.0
+https://android.googlesource.com/platform/frameworks/support/
+See Material-Icons-LICENSE.txt for the Apache-2.0 license text.
+
+XZ for Java -- see xz-COPYING.txt
+https://tukaani.org/xz/java.html
+
+Google ML Kit Chinese text recognition uses separate Google terms:
+https://developers.google.com/ml-kit/terms
+https://developers.google.com/ml-kit/android-data-disclosure
+
+These notices do not replace the individual component licenses.
