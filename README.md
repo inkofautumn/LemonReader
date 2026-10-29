@@ -1,10 +1,10 @@
-# 灵墨阅读 · Lemon
+# 灵墨阅读 · LemonReader
 
 灵墨阅读是一款 Android 本地小说阅读器。打开应用即可进入本机书架，导入自己的电子书，离线阅读并记录札记。需要伴读时，可以自行配置 AI，让它解释片段、回顾剧情、整理人物和线索。
 
 当前版本：**0.1.9-alpha**。支持 Android 11 及以上，提供 arm64-v8a 和 x86_64 架构。项目原创代码采用 [Apache-2.0](LICENSE)。
 
-[下载 Alpha APK](https://github.com/inkofautumn/Lemon/releases/download/v0.1.9-alpha/Lemon-0.1.9-alpha.apk) · [版本与更新](https://github.com/inkofautumn/Lemon/releases) · [问题反馈](https://github.com/inkofautumn/Lemon/issues)
+[下载 Alpha APK](https://github.com/inkofautumn/LemonReader/releases/download/v0.1.9-alpha/Lemon-0.1.9-alpha.apk) · [版本与更新](https://github.com/inkofautumn/LemonReader/releases) · [问题反馈](https://github.com/inkofautumn/LemonReader/issues)
 
 当前 Alpha APK 使用开发调试证书，适合试用。正式发行的签名配置见[构建与签名](docs/BUILDING.md)。
 
@@ -24,7 +24,7 @@
 
 ## 开始使用
 
-1. 从 [Release 页面](https://github.com/inkofautumn/Lemon/releases/tag/v0.1.9-alpha)安装 Alpha APK，进入书架导入电子书。其他应用中的小说文件也可通过系统分享菜单导入。
+1. 从 [Release 页面](https://github.com/inkofautumn/LemonReader/releases/tag/v0.1.9-alpha)安装 Alpha APK，进入书架导入电子书。其他应用中的小说文件也可通过系统分享菜单导入。
 2. 调整阅读设置，或从首页继续阅读。
 3. 使用 AI 时，在“设置 → 模型与 AI”添加自己的接口地址、模型和 API Key。
 4. 在“设置 → 数据管理”导出完整阅读资料。备份包含正文和图片，请保存在可信位置。
@@ -78,7 +78,7 @@ docs/                       使用与构建说明
 
 ## 反馈与参与
 
-通过 [Issues](https://github.com/inkofautumn/Lemon/issues) 提交应用版本、Android 版本、复现步骤和预期行为。小说问题优先使用可公开的小样本，分享日志前检查其中的信息。
+通过 [Issues](https://github.com/inkofautumn/LemonReader/issues) 提交应用版本、Android 版本、复现步骤和预期行为。小说问题优先使用可公开的小样本，分享日志前检查其中的信息。
 
 阅读边界、正文重连、备份恢复或模型请求的修改，请说明受影响的行为，并运行直接相关的测试。详见[贡献说明](CONTRIBUTING.md)。
 

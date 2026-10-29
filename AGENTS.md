@@ -1,6 +1,6 @@
 # 灵墨阅读项目指令
 
-- 产品名称为“灵墨阅读”，英文名 Lemon，应用 ID 为 `cn.jiangcheng.lemon`。
+- 产品名称为“灵墨阅读”，公开仓库名为 LemonReader，应用 ID 为 `cn.jiangcheng.lemon`。
 - 基础阅读离线运行；书籍和阅读资料保存在本机，模型请求由用户自行配置。
 - 所有模型 HTTP 调用通过 ModelHttp，仅支持模型列表与对话接口。
 - OCR 按需初始化，不在应用启动时初始化 SDK。
