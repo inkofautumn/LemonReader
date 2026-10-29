@@ -8,6 +8,32 @@
 
 当前 Alpha APK 使用开发调试证书，适合试用。正式发行的签名配置见[构建与签名](docs/BUILDING.md)。
 
+## 界面预览
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/screenshots/bookshelf.png" alt="书架：本地书籍与继续阅读" width="280" /><br /><strong>本地书架</strong><br />把自己的电子书放进书架，随时接着读。</td>
+    <td align="center" width="33%"><img src="docs/screenshots/reading.png" alt="阅读页：纸色正文、划线与阅读进度" width="280" /><br /><strong>沉浸阅读</strong><br />纸色正文与安静的阅读页，排版可自行调整。</td>
+    <td align="center" width="33%"><img src="docs/screenshots/assistant.png" alt="说书人：示例对话与原文依据入口" width="280" /><br /><strong>说书人伴读</strong><br />围绕已读内容追问，并查看回答所用的原文。</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/notes.png" alt="札记：原文摘录与个人批注分开呈现" width="280" /><br /><strong>划线与札记</strong><br />摘录留住原文，批注记下自己的想法。</td>
+    <td align="center"><img src="docs/screenshots/chronicles.png" alt="书志：人物和线索卡片" width="280" /><br /><strong>人物与线索书志</strong><br />按卡片整理人物、事件和待解的线索。</td>
+    <td align="center"><img src="docs/screenshots/excerpts.png" alt="拾墨：带标签、书名和感想的摘抄卡片" width="280" /><br /><strong>拾墨摘抄</strong><br />把喜欢的句子收进卡片，用标签慢慢整理。</td>
+  </tr>
+</table>
+
+截图来自 0.1.9-alpha 的真实应用界面，使用原创短篇《雨巷书店》和预置示例记录。说书人图中的回答是示例对话，用于展示交互和排版；实际回答由你配置的模型生成。
+
+## 试一次完整阅读流程
+
+1. 下载原创[示例小说《雨巷书店》](docs/demo/rainy-bookshop.txt)，在应用中选择“导入小说”。
+2. 打开书籍开始阅读，长按一句正文，添加划线或札记。
+3. 配置模型后，围绕选中文字向说书人提问，例如“铜钥匙和信封，已经交代了哪些线索？”。
+4. 在书志中记录人物与线索，把喜欢的句子收进拾墨。
+
+书架、阅读和记录可以离线使用；伴读任务会调用你配置的模型。示例中的札记、书志和对话用于展示，导入 TXT 时得到的是小说正文。
+
 ## 功能
 
 | 阅读环节 | 能力 |
